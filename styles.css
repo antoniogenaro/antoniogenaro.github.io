@@ -1,0 +1,36 @@
+body {
+  background-color: #3DF0D0;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+a {
+  color: #000000;
+  font-weight: 600;
+}
+a:hover {
+  color: #FFFFFF;
+}
+a.it-is-not-a-link {
+  font-weight: 100;
+  text-decoration: none;
+}
+a.it-is-not-a-link:hover {
+  color: #000000;
+  cursor: initial;
+}
+
+.welcome {
+  font-family: 'Pacifico', cursive;
+  color: #FF2716;
+  font-size: 40px;
+}
+.welcome-page-text:after {
+  content: 'page';
+}
+.welcome-page-text:hover:after {
+  content: 'anus';
+}
