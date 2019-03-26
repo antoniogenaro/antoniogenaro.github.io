@@ -1,7 +1,8 @@
 body {
-  background-color: #FFFFFF;
+  background-color: #002833;
   font-family: 'Source Code Pro', monospace;
   font-size: 20px;
+  color: #abccce;
 }
 
 .main-content {
@@ -9,16 +10,16 @@ body {
   max-width: 500px;
   margin: auto;
   padding: 15px;
-  background-color: #3DF0D0;
-  border: 5px solid #000000;
+  // background-color: #3DF0D0;
+  // border: 5px solid #000000;
 }
 
 a {
-  color: #000000;
+  color: #5cee96;
   font-weight: 600;
 }
 a:hover {
-  color: #FFFFFF;
+  color: #7cc77f;
 }
 a.it-is-not-a-link {
   font-weight: 100;
@@ -31,7 +32,7 @@ a.it-is-not-a-link:hover {
 
 .welcome {
   font-family: 'Pacifico', cursive;
-  color: #f0613d;
+  color: #c09035;
   font-size: 40px;
 }
 .welcome-page-text:after {
