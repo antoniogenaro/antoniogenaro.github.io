@@ -1,8 +1,17 @@
+:root {
+  --background: #002833;
+  --background-2: #001e27;
+  --foreground: #abccce;
+  --green: #5cee96;
+  --green-2: #7cc77f;
+  --yellow: #c09035;
+}
+
 body {
-  background-color: #002833;
+  background-color: var(--background);
   font-family: 'Source Code Pro', monospace;
   font-size: 20px;
-  color: #abccce;
+  color: var(--foreground);
 }
 
 .main-content {
@@ -10,16 +19,16 @@ body {
   max-width: 500px;
   margin: auto;
   padding: 15px;
-  // background-color: #3DF0D0;
-  // border: 5px solid #000000;
+  /* background-color: #3DF0D0; */
+  /* border: 5px solid #000000; */
 }
 
 a {
-  color: #5cee96;
+  color: var(--green);
   font-weight: 600;
 }
 a:hover {
-  color: #7cc77f;
+  color: var(--green-2);
 }
 a.it-is-not-a-link {
   font-weight: 100;
@@ -32,7 +41,7 @@ a.it-is-not-a-link:hover {
 
 .welcome {
   font-family: 'Pacifico', cursive;
-  color: #c09035;
+  color: var(--yellow);
   font-size: 40px;
 }
 .welcome-page-text:after {
