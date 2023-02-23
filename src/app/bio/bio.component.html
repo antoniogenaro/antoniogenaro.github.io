@@ -1,10 +1,13 @@
-<div class="bio-container" fxLayout="row">
-  <div class="bio-img">
-    <img [src]="bio.imgUrl" />
+<div
+  class="flex flex-col items-center gap-2 text-center sm:flex-row sm:items-start sm:text-left">
+  <div class="h-36 w-36">
+    <img [src]="bio.imgUrl" class="rounded-full border-2" />
   </div>
-  <div class="bio-info">
-    <h1>{{ bio.name }} {{ bio.surnames }}</h1>
-    <h2>{{ bio.work }}</h2>
+  <div>
+    <div class="text-3xl font-bold text-blue">
+      {{ bio.name }} {{ bio.surnames }}
+    </div>
+    <div class="text-2xl font-light text-green">{{ bio.work }}</div>
     <div>{{ bio.description }}</div>
   </div>
 </div>
