@@ -1,5 +1,5 @@
 {
-  "name": "antoniogenaro-web",
+  "name": "antoniogenaro.github.io",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,8 @@
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "prettier": "prettier --write .",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "ng deploy"
   },
   "private": true,
   "dependencies": {
@@ -38,6 +39,7 @@
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.48.2",
     "@typescript-eslint/parser": "5.48.2",
+    "angular-cli-ghpages": "^1.0.5",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",

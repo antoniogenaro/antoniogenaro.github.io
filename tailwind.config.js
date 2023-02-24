@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{html,ts}",
-  ],
+  content: ['./src/**/*.{html,ts}'],
   theme: {
     extend: {},
     colors: {
@@ -16,9 +14,9 @@ module.exports = {
       yellow: 'rgb(var(--color-yellow) / <alpha-value>)',
     },
     fontFamily: {
-      sans: ['Roboto Mono', 'monospace']
-    }
+      sans: ['Roboto Mono', 'monospace'],
+    },
   },
   plugins: [],
-  darkMode: "class"
-}
+  darkMode: 'class',
+};
