@@ -119,7 +119,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "repo": "https://github.com/antoniogenaro/antoniogenaro.github.io.git"
+            "cname": "genaro.dev"
           }
         }
       }
