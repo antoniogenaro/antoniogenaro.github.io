@@ -16,6 +16,8 @@ export interface Experience {
   endDate?: Date;
   work: string;
   url: string;
+  description?: string;
+  descriptionUrl?: string;
 }
 
 export interface Bio {

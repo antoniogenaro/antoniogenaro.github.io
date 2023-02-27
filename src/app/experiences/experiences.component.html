@@ -1,17 +1,25 @@
 <div>
   <a
     *ngFor="let experience of experiences"
-    class="flex flex-col border-b py-1 hover:underline"
+    class="group flex flex-col border-b py-1"
     [ngClass]="{ 'pointer-events-none': !experience.url }"
     [href]="experience.url"
     target="_blank">
-    <div class="text-lg text-blue">{{ experience.work }}</div>
-    <div class="font-light text-green">{{ experience.business }}</div>
-    <div class="text-sm">
+    <div class="text-lg text-blue group-hover:underline">
+      {{ experience.work }}
+    </div>
+    <div class="font-light text-green group-hover:underline">
+      {{ experience.business }}
+    </div>
+    <div class="text-sm group-hover:underline">
       {{ experience.startDate | date : 'MMM yyyy' }} -
       {{
         experience.endDate ? (experience.endDate | date : 'MMM yyyy') : 'act.'
       }}
     </div>
+    <div
+      *ngIf="experience.description"
+      class="mt-1 text-xs font-light"
+      [innerHTML]="experience.description"></div>
   </a>
 </div>

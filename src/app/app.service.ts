@@ -1,6 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, Observable } from 'rxjs';
+import {
+  catchError,
+  from,
+  map,
+  mergeMap,
+  Observable,
+  of,
+  switchMap,
+  toArray,
+} from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Bio, Experience, Network, SkillsGrouping, Talk } from './app.models';
 
@@ -19,7 +28,25 @@ export class AppService {
   }
 
   getExperiences(): Observable<Experience[]> {
-    return this.getData<Experience[]>('experiences');
+    return this.getData<Experience[]>('experiences').pipe(
+      switchMap(experiences =>
+        from(experiences).pipe(
+          mergeMap(experience =>
+            experience.descriptionUrl
+              ? this.http
+                  .get(
+                    `${environment.endpointLocal}/experiences-descriptions/${experience.descriptionUrl}`,
+                    {
+                      responseType: 'text',
+                    }
+                  )
+                  .pipe(map(description => ({ ...experience, description })))
+              : of(experience)
+          ),
+          toArray()
+        )
+      )
+    );
   }
 
   getNetworks(): Observable<Network[]> {

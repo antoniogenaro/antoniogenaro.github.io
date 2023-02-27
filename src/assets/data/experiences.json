@@ -9,13 +9,15 @@
     "business": "Wabi",
     "startDate": "2022-03",
     "endDate": "2023-02",
-    "work": "Frontend developer"
+    "work": "Frontend developer",
+    "descriptionUrl": "wabi.html"
   },
   {
     "business": "Coderty",
     "startDate": "2016-04",
     "endDate": "2022-03",
     "work": "Fullstack developer",
-    "url": "https://coderty.com/"
+    "url": "https://coderty.com/",
+    "descriptionUrl": "coderty.html"
   }
 ]
